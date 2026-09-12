@@ -1,0 +1,7 @@
+.floating-boxes {
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  flex-shrink: 0;
+  will-change: transform;
+}

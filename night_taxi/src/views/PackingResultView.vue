@@ -131,9 +131,9 @@ const selectLayer = (index) => {
           Слой {{ currentLayerIndex + 1 }} | Шаг {{ currentStepInLayerIndex + 1 }} из {{ stepsOnCurrentLayer.length }}
         </div>
         <div class="product-highlight">
-          <h2>📦 Положите на этот слой: <span class="yellow-text">{{ currentStep.product_name }}</span></h2>
+          <h2>Положите на этот слой: <span class="yellow-text">{{ currentStep.product_name }}</span></h2>
           <p class="sku-tag">SKU: {{ currentStep.sku }} | Размер: {{ currentStep.length }}×{{ currentStep.width }} см</p>
-          <p class="instruction-text">👉 <strong>Инструкция:</strong> {{ currentStep.text }}</p>
+          <p class="instruction-text"><strong>Инструкция:</strong> {{ currentStep.text }}</p>
         </div>
       </div>
 

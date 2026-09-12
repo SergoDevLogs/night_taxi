@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import FeatureCard from '../components/FeatureCard.vue'
+import Logo from '@/components/brand/Logo.vue'
+import BoxIllustration from '@/components/brand/BoxIllustration.vue'
+
 
 const cardsData = ref([
   { id: 1, icon: '🌙', title: 'Карточка 1', description: 'Текст карточки. Описания, пояснения и т.д.' },
@@ -20,7 +23,9 @@ const cardsData = ref([
       </div>
       
       <div class="hero-image">
-        <div class="image-placeholder">📦</div>
+        <div class="image-placeholder">
+   <BoxIllustration style="width: 220px; height: 220px;" />
+</div>
       </div>
     </main>
 
@@ -85,7 +90,7 @@ const cardsData = ref([
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
   border: 2px solid #333;
   border-radius: 20px;
-  transform: rotate(-10deg);
+  transform: rotate(10deg);
   display: flex;
   justify-content: center;
   align-items: center;

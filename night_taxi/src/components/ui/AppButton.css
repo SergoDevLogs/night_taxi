@@ -1,0 +1,14 @@
+.app-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-sans); font-weight: 600; border-radius: var(--radius-pill);
+  border: none; cursor: pointer; transition: background-color 0.15s ease, opacity 0.15s ease;
+  white-space: nowrap;
+}
+.app-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.app-btn--sm { height: 36px; padding: 0 16px; font-size: 0.875rem; }
+.app-btn--md { height: 44px; padding: 0 24px; font-size: 1rem; }
+.app-btn--lg { height: 56px; padding: 0 32px; font-size: 1.125rem; }
+.app-btn--primary { background-color: var(--color-accent); color: var(--color-text-inverse); }
+.app-btn--primary:not(:disabled):hover { background-color: var(--color-accent-hover); }
+.app-btn--secondary { background-color: var(--color-surface-2); color: var(--color-text); }
+.app-btn--block { width: 100%; }

@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Logo from './components/brand/Logo.vue';
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <!-- ОБЩАЯ ШАПКА ДЛЯ ВСЕХ СТРАНИЦ -->
     <header class="header">
       <div class="logo">
-        <span class="logo-icon">📦</span> ФитТара
+        <span class="logo-icon"><Logo/></span> ФитТара
       </div>
       <nav class="nav-links">
         <RouterLink to="/" exact-active-class="active">Главная</RouterLink>

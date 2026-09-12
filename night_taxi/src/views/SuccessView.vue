@@ -47,7 +47,6 @@ const goHome = () => {
 <template>
   <div class="success-page">
     <div class="success-card">
-      <div class="success-icon">🎉</div>
       <h1 class="title">Заказ успешно упакован!</h1>
       <p class="subtitle">Все товары распределены по коробкам согласно алгоритму.</p>
 
@@ -70,7 +69,7 @@ const goHome = () => {
       <!-- Кнопки действий -->
       <div class="actions">
         <button class="btn-secondary" @click="downloadReport">
-          📥 Скачать отчет (TXT/CSV)
+          Скачать отчет (TXT/CSV)
         </button>
         <button class="btn-primary" @click="goHome">
           На главную
