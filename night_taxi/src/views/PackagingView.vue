@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 const isAssembling = ref(false)
 const orderItems = ref([])
@@ -57,7 +59,8 @@ const removeItem = (uid) => {
 }
 
 const proceedToPackaging = () => {
-  alert('Переходим к упаковке! (пока пустышка)')
+  // Здесь в будущем мы сделаем реальный POST запрос, а пока просто переходим на экран результатов
+  router.push('/packing-result')
 }
 </script>
 

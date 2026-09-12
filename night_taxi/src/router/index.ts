@@ -16,6 +16,16 @@ const router = createRouter({
     
     },
     {
+      path: '/success',
+      name: 'success',
+      component: () => import('../views/SuccessView.vue')
+    },
+    {
+      path: '/packing-result',
+      name: 'packing-result',
+      component: () => import('../views/PackingResultView.vue')
+    },
+    {
       path: '/packaging',
       name: 'packaging',
       // Ленивая загрузка (как React.lazy) - файл скачается только при переходе
